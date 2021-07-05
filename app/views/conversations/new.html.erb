@@ -1,0 +1,13 @@
+
+
+<div class="container">
+    <div class="row">
+        <div class="form-group form-control">
+            <%= form_for @conversation do |f| %> 
+                <%= f.label :freq, "Choose Channel" %>
+                <%= f.text_field :freq %>
+                <%= f.submit 'Access', class: 'btn btn-info' %>  
+            <% end %>
+        </div>        
+    </div>
+</div>
