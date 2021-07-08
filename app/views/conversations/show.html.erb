@@ -1,0 +1,12 @@
+
+
+
+<div class="container">
+    <br>
+    <h3>Frequency: <i><%= @conversation.frequency %></i></h3>
+    <div id="station" id-data=<%= @conversation.id %> >
+         <% @conversation.state.each do |u| %>  
+         <h6> <%= u %> </h6>
+         <% end %>
+    </div>
+</div>
