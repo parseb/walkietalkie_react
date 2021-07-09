@@ -3,10 +3,34 @@
 
 <div class="container">
     <br>
+    <h3 id="current-user"><%= session[:user] %></h3>  
+    <hr>
     <h3>Frequency: <i><%= @conversation.frequency %></i></h3>
     <div id="station" id-data=<%= @conversation.id %> >
+
          <% @conversation.state.each do |u| %>  
          <h6> <%= u %> </h6>
          <% end %>
     </div>
+
+
+<div class="row">
+    <div id="remote-video-container"></div>
+<video id="local-video" autoplay></video>
+
+<hr />
+
+<button id="join-button">
+  Join Room
+</button>
+
+<button id="leave-button">
+  Leave Room
+</button>        
 </div>
+
+
+</div>
+
+
+<span id="current-user"><%= @random_number %></span>
