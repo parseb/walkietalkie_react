@@ -64,9 +64,7 @@ const handleJoinSession = async (id) => {
 };
 
 const broadcastData = (data,i) => {
-  /**
-   * Add CSRF protection: https://stackoverflow.com/questions/8503447/rails-how-to-add-csrf-protection-to-forms-created-in-javascript
-   */
+  
   const csrfToken = document.querySelector("[name=csrf-token]").content;
   const headers = new Headers({
     "content-type": "application/json",
